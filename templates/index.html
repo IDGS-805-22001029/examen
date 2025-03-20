@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/css/output.css" rel="stylesheet">
+</head>
+
+<body class="dark:bg-gray-700 flex items-center justify-center min-h-screen">
+    <div class=" grid grid-cols-2 gap-6 p-6 md:grid-cols-4 lg:grid-cols-4 justify-items-center">
+        <div>
+            <a href="{{ url_for('crearA') }}"
+                class="block max-w-sm p-6 bg-black border border-gray-200 rounded-lg shadow-sm hover:bg-gray-500 bg-gray-200  light:border-gray-700 light:hover:bg-gray-700">
+
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 light:text-black">Crear Alumno</h5>
+                <p class="font-normal text-gray-700 light:text-gray-400">En este modulo Crearas un alumno</p>
+            </a>
+        </div>
+        <div>
+            <a href="{{ url_for('crearE') }}"
+                class="block max-w-sm p-6 bg-black border border-gray-200 rounded-lg shadow-sm hover:bg-gray-500 bg-gray-200  light:border-gray-700 light:hover:bg-gray-700">
+
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 light:text-black">Crear Pregunta</h5>
+                <p class="font-normal text-gray-700 light:text-gray-400">En este modulo Crearas un examen </p>
+            </a>
+        </div>
+        <div>
+            <a href="{{ url_for('calif') }}"
+                class="block max-w-sm p-6 bg-black border border-gray-200 rounded-lg shadow-sm hover:bg-gray-500 bg-gray-200  light:border-gray-700 light:hover:bg-gray-700">
+
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 light:text-black">Ver Resultados
+                </h5>
+                <p class="font-normal text-gray-700 light:text-gray-400">En este modulo podras ver calificaciones</p>
+            </a>
+        </div>
+        <div>
+            <a href="{{ url_for('buscar_A') }}"
+                class="block max-w-sm p-6 bg-black border border-gray-200 rounded-lg shadow-sm hover:bg-gray-500 bg-gray-200 light:border-gray-700 light:hover:bg-gray-700">
+
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 light:text-black">Resolver Examen
+                </h5>
+                <p class="font-normal text-gray-700 light:text-gray-400">En este modulo contestarás el examen</p>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+{%extends "layout.html"%}
+{%block content%}
+<div class="grid grid-cols-2 gap-6 p-6 md:grid-cols-3 lg:grid-cols-3 justify-items-center">
+    <div>
+        <form class="max-w-sm mx-auto">
+            <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select an option</label>
+            <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                <option selected>Escoja un grupo</option>
+              {%for grupo in grupos%}
+                <option value="{{grupo[0]}}">{{grupo[0]}}</option>
+                {%endfor%}
+            </select>
+          </form><br><br><br>
+
+          <button type="button" id="loadGroupButton" class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">
+            Cargar Grupo
+        </button>
+    </div>
+    <div>
+        <div class="relative overflow-x-auto">
+            <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                    <tr>
+                        <th scope="col" class="px-6 py-3">
+                            Nombre
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Grupo
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Calificación
+                        </th>
+                    </tr>
+                </thead>
+                <tbody id="studentsTableBody">
+                    {% for alum in alumnos %}
+                    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 border-gray-200">
+                        <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            {{ alum.nombre }} {{alum.apaterno}} {{alum.amaterno}}
+                        </th>
+                        <td class="px-6 py-4">
+                            {{ alum.grupo }}
+                        </td>
+                        <td class="px-6 py-4">
+                            {{ alum.calificacion }}
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script>
+document.getElementById('loadGroupButton').addEventListener('click', function() {
+    const selectedGroup = document.getElementById('countries').value;
+    fetch(`/load_group?group=${selectedGroup}`)
+        .then(response => response.json())
+        .then(data => {
+            const tableBody = document.getElementById('studentsTableBody');
+            tableBody.innerHTML = '';
+            data.alumnos.forEach(alum => {
+                const row = document.createElement('tr');
+                row.classList.add('bg-white', 'border-b', 'dark:bg-gray-800', 'dark:border-gray-700', 'border-gray-200');
+                row.innerHTML = `
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        ${alum.nombre} ${alum.apaterno} ${alum.amaterno}
+                    </th>
+                    <td class="px-6 py-4">
+                        ${alum.grupo}
+                    </td>
+                    <td class="px-6 py-4">
+                        ${alum.calificacion}
+                    </td>
+                `;
+                tableBody.appendChild(row);
+            });
+        });
+});
+</script>
+{%endblock%}

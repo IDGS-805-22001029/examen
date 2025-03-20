@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumnos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/output.css') }}">
+    <style>
+        .flashes {
+            list-style-type: none;
+            padding: 0;
+        }
+        .flashes li {
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .flashes .success {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .flashes .error {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+    </style>
+</head>
+
+<body>
+    <div
+        class="fixed bottom-0 left-0 z-50 grid w-full h-16 grid-cols-1 px-8 bg-white border-t border-gray-200 md:grid-cols-3 dark:bg-gray-700 dark:border-gray-600">
+        <div class="items-center justify-center hidden text-gray-500 dark:text-gray-400 me-auto md:flex">
+        </div>
+        <div class="flex items-center justify-center mx-auto">
+            <a href="{{ url_for('index') }}">
+                <button data-tooltip-target="tooltip-home" type="button"
+                    class="p-2.5 group bg-gray-100 rounded-full hover:bg-gray-200 me-4 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:bg-gray-600 dark:hover:bg-gray-800">
+                    <svg class="w-4 h-4 text-gray-500 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white"
+                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 2.5L2 9h2v8h4v-5h4v5h4V9h2L10 2.5z"/>
+                    </svg>
+                    <span class="sr-only">Inicio</span>
+                </button>
+            </a>
+            <div id="tooltip-microphone" role="tooltip"
+                class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-xs opacity-0 tooltip dark:bg-gray-700">
+                Inicio
+                <div class="tooltip-arrow" data-popper-arrow></div>
+            </div>
+        </div>
+        <div class="items-center justify-center hidden ms-auto md:flex">
+        </div>
+    </div>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <ul class="flashes">
+                {% for category, message in messages %}
+                    <li class="{{ category }}">{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+
+    {% block content %}
+    {% endblock %}
+
+    {% block scripts %}
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js">
+    </script>
+    {% endblock %}
+</body>
+
+</html>
