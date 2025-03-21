@@ -9,20 +9,27 @@
 
 <body>
     <div class="login flex items-center justify-center min-h-screen">
-        
-        <div class="login flex items-center justify-center  grid grid-cols-1" >
-            <h1 class="text-2xl font-bold"> Login</h1>
-            <div class="block max-w-md p-6 bg-white
-            border border-gray-200 rounded-lg shadow-sm">
+        <div class="login flex items-center justify-center grid grid-cols-1">
+            <h1 class="text-2xl font-bold">Login</h1>
+            <div class="block max-w-md p-6 bg-white border border-gray-200 rounded-lg shadow-sm">
+                
+                {% with messages = get_flashed_messages(category_filter=['danger']) %}
+                    {% if messages %}
+                        <div class="p-3 mb-4 text-red-700 bg-red-100 border border-red-400 rounded">
+                            {{ messages[0] }}
+                        </div>
+                    {% endif %}
+                {% endwith %}
 
                 <form class="grid grid-cols-2 m-5" method="post" action="/login">
                     {{ form.csrf_token }}
-                    <input class="p-3 border border-gray-200"  type="text" name="username" placeholder="Username" required="required" />
+                    <input class="p-3 border border-gray-200" type="text" name="username" placeholder="Username" required="required" />
                     <input class="p-3 border border-gray-200" type="password" name="password" placeholder="Password" required="required" />
-                    <button class="p-3 hover:bg-gray-100  border border-gray-200" type="submit" class="btn btn-primary btn-block btn-large">Login</button>
+                    <button class="p-3 hover:bg-gray-100 border border-gray-200" type="submit" class="btn btn-primary btn-block btn-large">Login</button>
                 </form>
             </div>
         </div>
     </div>
+</body>
 
 </html>
