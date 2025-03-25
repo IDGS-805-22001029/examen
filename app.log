@@ -1,0 +1,99 @@
+2025-03-23 13:50:16,485 - INFO - Aplicación iniciada.
+2025-03-23 13:50:16,546 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-23 13:50:16,546 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-23 13:50:16,551 - INFO -  * Restarting with stat
+2025-03-23 13:50:18,403 - INFO - Aplicación iniciada.
+2025-03-23 13:50:18,443 - WARNING -  * Debugger is active!
+2025-03-23 13:50:18,448 - INFO -  * Debugger PIN: 415-088-164
+2025-03-23 13:50:23,835 - INFO - 127.0.0.1 - - [23/Mar/2025 13:50:23] "GET / HTTP/1.1" 200 -
+2025-03-23 13:50:24,143 - INFO - 127.0.0.1 - - [23/Mar/2025 13:50:24] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-23 13:50:30,020 - INFO - Usuario vayron inició sesión.
+2025-03-23 13:50:30,026 - INFO - 127.0.0.1 - - [23/Mar/2025 13:50:30] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-23 13:50:30,354 - INFO - Usuario vayron accedió a la página principal.
+2025-03-23 13:50:30,366 - INFO - 127.0.0.1 - - [23/Mar/2025 13:50:30] "GET /index HTTP/1.1" 200 -
+2025-03-23 13:50:30,599 - INFO - 127.0.0.1 - - [23/Mar/2025 13:50:30] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-23 13:50:54,826 - INFO - 127.0.0.1 - - [23/Mar/2025 13:50:54] "GET /crearA HTTP/1.1" 200 -
+2025-03-23 13:50:55,192 - INFO - 127.0.0.1 - - [23/Mar/2025 13:50:55] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-23 13:51:08,072 - INFO - Usuario vayron agregó un alumno: Carlos Prieto.
+2025-03-23 13:51:08,079 - INFO - 127.0.0.1 - - [23/Mar/2025 13:51:08] "[32mPOST /crearA HTTP/1.1[0m" 302 -
+2025-03-23 13:51:08,408 - INFO - 127.0.0.1 - - [23/Mar/2025 13:51:08] "GET /crearA HTTP/1.1" 200 -
+2025-03-23 13:51:08,662 - INFO - 127.0.0.1 - - [23/Mar/2025 13:51:08] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-23 13:51:10,306 - INFO - Usuario vayron accedió a la página principal.
+2025-03-23 13:51:10,311 - INFO - 127.0.0.1 - - [23/Mar/2025 13:51:10] "GET /index HTTP/1.1" 200 -
+2025-03-23 13:51:10,683 - INFO - 127.0.0.1 - - [23/Mar/2025 13:51:10] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-23 13:51:12,319 - INFO - Usuario vayron accedió a la página de calificaciones.
+2025-03-23 13:51:12,333 - INFO - 127.0.0.1 - - [23/Mar/2025 13:51:12] "GET /calif HTTP/1.1" 200 -
+2025-03-23 13:51:12,707 - INFO - 127.0.0.1 - - [23/Mar/2025 13:51:12] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-23 13:51:17,059 - INFO - Usuario vayron cargó el grupo IDGS-805.
+2025-03-23 13:51:17,065 - INFO - 127.0.0.1 - - [23/Mar/2025 13:51:17] "GET /load_group?group=IDGS-805 HTTP/1.1" 200 -
+2025-03-23 13:51:38,190 - INFO - Usuario vayron cerró sesión.
+2025-03-23 13:51:38,197 - INFO - 127.0.0.1 - - [23/Mar/2025 13:51:38] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-03-23 13:51:38,452 - INFO - 127.0.0.1 - - [23/Mar/2025 13:51:38] "GET /login HTTP/1.1" 200 -
+2025-03-23 13:51:38,515 - INFO - 127.0.0.1 - - [23/Mar/2025 13:51:38] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 15:49:28,682 - INFO - Aplicación iniciada.
+2025-03-25 15:49:28,781 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-25 15:49:28,781 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-25 15:49:28,782 - INFO -  * Restarting with stat
+2025-03-25 15:49:30,357 - INFO - Aplicación iniciada.
+2025-03-25 15:49:30,399 - WARNING -  * Debugger is active!
+2025-03-25 15:49:30,407 - INFO -  * Debugger PIN: 415-088-164
+2025-03-25 15:50:06,333 - INFO - 127.0.0.1 - - [25/Mar/2025 15:50:06] "GET / HTTP/1.1" 200 -
+2025-03-25 15:50:06,540 - INFO - 127.0.0.1 - - [25/Mar/2025 15:50:06] "[33mGET /static/css/output.css HTTP/1.1[0m" 404 -
+2025-03-25 15:50:06,710 - INFO - 127.0.0.1 - - [25/Mar/2025 15:50:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-25 15:50:36,719 - INFO - 127.0.0.1 - - [25/Mar/2025 15:50:36] "GET / HTTP/1.1" 200 -
+2025-03-25 15:50:37,069 - INFO - 127.0.0.1 - - [25/Mar/2025 15:50:37] "[33mGET /static/css/output.css HTTP/1.1[0m" 404 -
+2025-03-25 15:50:39,047 - INFO - 127.0.0.1 - - [25/Mar/2025 15:50:39] "GET / HTTP/1.1" 200 -
+2025-03-25 15:50:39,386 - INFO - 127.0.0.1 - - [25/Mar/2025 15:50:39] "[33mGET /static/css/output.css HTTP/1.1[0m" 404 -
+2025-03-25 15:50:41,512 - INFO - 127.0.0.1 - - [25/Mar/2025 15:50:41] "GET / HTTP/1.1" 200 -
+2025-03-25 15:50:41,854 - INFO - 127.0.0.1 - - [25/Mar/2025 15:50:41] "[33mGET /static/css/output.css HTTP/1.1[0m" 404 -
+2025-03-25 15:51:07,329 - INFO - 127.0.0.1 - - [25/Mar/2025 15:51:07] "GET / HTTP/1.1" 200 -
+2025-03-25 15:51:07,674 - INFO - 127.0.0.1 - - [25/Mar/2025 15:51:07] "[33mGET /static/css/output.css HTTP/1.1[0m" 404 -
+2025-03-25 15:51:09,674 - INFO - 127.0.0.1 - - [25/Mar/2025 15:51:09] "GET / HTTP/1.1" 200 -
+2025-03-25 15:51:10,034 - INFO - 127.0.0.1 - - [25/Mar/2025 15:51:10] "[33mGET /static/css/output.css HTTP/1.1[0m" 404 -
+2025-03-25 15:51:24,647 - INFO - 127.0.0.1 - - [25/Mar/2025 15:51:24] "GET / HTTP/1.1" 200 -
+2025-03-25 15:51:24,995 - INFO - 127.0.0.1 - - [25/Mar/2025 15:51:24] "[33mGET /static/css/output.css HTTP/1.1[0m" 404 -
+2025-03-25 15:51:25,646 - INFO - 127.0.0.1 - - [25/Mar/2025 15:51:25] "GET / HTTP/1.1" 200 -
+2025-03-25 15:51:25,989 - INFO - 127.0.0.1 - - [25/Mar/2025 15:51:25] "[33mGET /static/css/output.css HTTP/1.1[0m" 404 -
+2025-03-25 15:51:26,255 - INFO - 127.0.0.1 - - [25/Mar/2025 15:51:26] "GET / HTTP/1.1" 200 -
+2025-03-25 15:51:26,318 - INFO - 127.0.0.1 - - [25/Mar/2025 15:51:26] "[33mGET /static/css/output.css HTTP/1.1[0m" 404 -
+2025-03-25 15:51:26,584 - INFO - 127.0.0.1 - - [25/Mar/2025 15:51:26] "GET / HTTP/1.1" 200 -
+2025-03-25 15:51:26,660 - INFO - 127.0.0.1 - - [25/Mar/2025 15:51:26] "[33mGET /static/css/output.css HTTP/1.1[0m" 404 -
+2025-03-25 15:51:26,929 - INFO - 127.0.0.1 - - [25/Mar/2025 15:51:26] "GET / HTTP/1.1" 200 -
+2025-03-25 15:51:27,052 - INFO - 127.0.0.1 - - [25/Mar/2025 15:51:27] "[33mGET /static/css/output.css HTTP/1.1[0m" 404 -
+2025-03-25 15:51:31,867 - INFO - Usuario vayron inició sesión.
+2025-03-25 15:51:31,872 - INFO - 127.0.0.1 - - [25/Mar/2025 15:51:31] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-25 15:51:32,205 - INFO - Usuario vayron accedió a la página principal.
+2025-03-25 15:51:32,243 - INFO - 127.0.0.1 - - [25/Mar/2025 15:51:32] "GET /index HTTP/1.1" 200 -
+2025-03-25 15:51:32,448 - INFO - 127.0.0.1 - - [25/Mar/2025 15:51:32] "[33mGET /static/css/output.css HTTP/1.1[0m" 404 -
+2025-03-25 15:52:15,380 - INFO - Aplicación iniciada.
+2025-03-25 15:52:15,448 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-25 15:52:15,448 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-25 15:52:15,455 - INFO -  * Restarting with stat
+2025-03-25 15:52:16,943 - INFO - Aplicación iniciada.
+2025-03-25 15:52:16,974 - WARNING -  * Debugger is active!
+2025-03-25 15:52:16,981 - INFO -  * Debugger PIN: 415-088-164
+2025-03-25 15:52:21,160 - INFO - 127.0.0.1 - - [25/Mar/2025 15:52:21] "GET / HTTP/1.1" 200 -
+2025-03-25 15:52:21,383 - INFO - 127.0.0.1 - - [25/Mar/2025 15:52:21] "[33mGET /static/css/output.css HTTP/1.1[0m" 404 -
+2025-03-25 15:54:00,878 - INFO -  * Detected change in 'c:\\Users\\vayro\\OneDrive\\Escritorio\\8VO\\8VO\\DESARROLLO WEB PRO\\examen\\app.py', reloading
+2025-03-25 15:54:01,144 - INFO -  * Restarting with stat
+2025-03-25 15:54:02,986 - INFO - Aplicación iniciada.
+2025-03-25 15:54:03,028 - WARNING -  * Debugger is active!
+2025-03-25 15:54:03,036 - INFO -  * Debugger PIN: 415-088-164
+2025-03-25 15:54:03,199 - INFO - 127.0.0.1 - - [25/Mar/2025 15:54:03] "GET / HTTP/1.1" 200 -
+2025-03-25 15:54:03,432 - INFO - 127.0.0.1 - - [25/Mar/2025 15:54:03] "GET /static/css/output.css HTTP/1.1" 200 -
+2025-03-25 15:54:23,921 - INFO - 127.0.0.1 - - [25/Mar/2025 15:54:23] "GET / HTTP/1.1" 200 -
+2025-03-25 15:54:24,259 - INFO - 127.0.0.1 - - [25/Mar/2025 15:54:24] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 15:54:30,229 - INFO - Usuario vayron inició sesión.
+2025-03-25 15:54:30,235 - INFO - 127.0.0.1 - - [25/Mar/2025 15:54:30] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-25 15:54:30,557 - INFO - Usuario vayron accedió a la página principal.
+2025-03-25 15:54:30,572 - INFO - 127.0.0.1 - - [25/Mar/2025 15:54:30] "GET /index HTTP/1.1" 200 -
+2025-03-25 15:54:30,808 - INFO - 127.0.0.1 - - [25/Mar/2025 15:54:30] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 15:54:32,569 - INFO - 127.0.0.1 - - [25/Mar/2025 15:54:32] "GET /crearE HTTP/1.1" 200 -
+2025-03-25 15:54:32,933 - INFO - 127.0.0.1 - - [25/Mar/2025 15:54:32] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 15:54:36,558 - INFO - Usuario vayron cerró sesión.
+2025-03-25 15:54:36,560 - INFO - 127.0.0.1 - - [25/Mar/2025 15:54:36] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-03-25 15:54:36,887 - INFO - 127.0.0.1 - - [25/Mar/2025 15:54:36] "GET /login HTTP/1.1" 200 -
+2025-03-25 15:54:37,138 - INFO - 127.0.0.1 - - [25/Mar/2025 15:54:37] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
