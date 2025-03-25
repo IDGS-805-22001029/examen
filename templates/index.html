@@ -10,7 +10,7 @@
 <body class="dark:bg-gray-700 flex items-center justify-center min-h-screen">
     <div class=" grid grid-cols-2 gap-6 p-6 md:grid-cols-4 lg:grid-cols-4 justify-items-center">
         <div>
-            <a href="{{ url_for('crearA') }}"
+            <a href="{{ url_for('alumnos.crearA') }}"
                 class="block max-w-sm p-6 bg-black border border-gray-200 rounded-lg shadow-sm hover:bg-gray-500 bg-gray-200  light:border-gray-700 light:hover:bg-gray-700">
 
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 light:text-black">Crear Alumno</h5>
@@ -18,7 +18,7 @@
             </a>
         </div>
         <div>
-            <a href="{{ url_for('crearE') }}"
+            <a href="{{ url_for('maestros.crearE') }}"
                 class="block max-w-sm p-6 bg-black border border-gray-200 rounded-lg shadow-sm hover:bg-gray-500 bg-gray-200  light:border-gray-700 light:hover:bg-gray-700">
 
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 light:text-black">Crear Pregunta</h5>
@@ -26,7 +26,7 @@
             </a>
         </div>
         <div>
-            <a href="{{ url_for('calif') }}"
+            <a href="{{ url_for('alumnos.calif') }}"
                 class="block max-w-sm p-6 bg-black border border-gray-200 rounded-lg shadow-sm hover:bg-gray-500 bg-gray-200  light:border-gray-700 light:hover:bg-gray-700">
 
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 light:text-black">Ver Resultados
@@ -35,12 +35,20 @@
             </a>
         </div>
         <div>
-            <a href="{{ url_for('buscar_A') }}"
+            <a href="{{ url_for('alumnos.buscar_A') }}"
                 class="block max-w-sm p-6 bg-black border border-gray-200 rounded-lg shadow-sm hover:bg-gray-500 bg-gray-200 light:border-gray-700 light:hover:bg-gray-700">
 
                 <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 light:text-black">Resolver Examen
                 </h5>
                 <p class="font-normal text-gray-700 light:text-gray-400">En este modulo contestarás el examen</p>
+            </a>
+        </div>
+        <div>
+            <a href="{{ url_for('maestros.maestros') }}"
+                class="block max-w-sm p-6 bg-black border border-gray-200 rounded-lg shadow-sm hover:bg-gray-500 bg-gray-200 light:border-gray-700 light:hover:bg-gray-700">
+
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 light:text-black">Gestión de Maestros</h5>
+                <p class="font-normal text-gray-700 light:text-gray-400">En este módulo podrás agregar, editar y eliminar maestros.</p>
             </a>
         </div>
     </div>

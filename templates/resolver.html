@@ -9,7 +9,7 @@
         <h2 class="font-bold">Grupo: {{ alumno.grupo }}</h2>
         <h2 class="font-bold">Edad: {{ edad }}</h2><br><br><br>
 
-        <form method="POST" action="{{ url_for('resolver', alumno_id=alumno.id) }}">
+        <form method="POST" action="{{ url_for('alumnos.resolver', alumno_id=alumno.id) }}">
             <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
             <div class="relative overflow-x-auto">
                 <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">

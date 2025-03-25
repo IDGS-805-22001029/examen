@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maestros</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/output.css') }}">
+</head>
+
+<body>
+    <h1>Gestión de Maestros</h1>
+
+    <form method="POST" action="{{ url_for('maestros.maestros') }}">
+        {{ form.csrf_token }}
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="contrasenia">Contraseña:</label>
+        <input type="password" id="contrasenia" name="contrasenia" required>
+        <button type="submit">Agregar Maestro</button>
+    </form>
+
+    <hr>
+
+    <h2>Lista de Maestros</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for maestro in maestros %}
+            <tr>
+                <td>{{ maestro.id }}</td>
+                <td>{{ maestro.nombre }}</td>
+                <td>
+                    <a href="{{ url_for('maestros.editar_maestro', id=maestro.id) }}">Editar</a>
+
+                    <form method="POST" action="{{ url_for('maestros.eliminar_maestro', id=maestro.id) }}"
+                        style="display:inline;">
+                        <button type="submit"
+                            onclick="return confirm('¿Estás seguro de eliminar este maestro?');">Eliminar</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+
+</html>

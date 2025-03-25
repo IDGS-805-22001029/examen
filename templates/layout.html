@@ -34,7 +34,7 @@
 <body>
     <div class="flex items-center justify-center mx-auto">
         <!-- Botón de Inicio -->
-        <a href="{{ url_for('index') }}">
+        <a href="{{ url_for('auth.index') }}">
             <button data-tooltip-target="tooltip-home" type="button"
                 class="p-2.5 group bg-gray-100 rounded-full hover:bg-gray-200 me-4 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:bg-gray-600 dark:hover:bg-gray-800">
                 <svg class="w-4 h-4 text-gray-500 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white"
@@ -51,7 +51,7 @@
         </div>
     
         <!-- Botón de Logout -->
-        <a href="{{ url_for('logout') }}">
+        <a href="{{ url_for('auth.logout') }}">
             <button data-tooltip-target="tooltip-logout" type="button"
                 class="p-2.5 group bg-gray-100 rounded-full hover:bg-gray-200 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:bg-gray-600 dark:hover:bg-gray-800">
                 <svg class="w-4 h-4 text-gray-500 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white"

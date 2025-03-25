@@ -1,15 +1,13 @@
 import logging
-from flask import Flask, render_template, request, flash, redirect, url_for, jsonify
-from flask_login import UserMixin, login_user, login_required, logout_user, LoginManager, current_user
-import forms
+from flask import Flask, request, render_template, redirect, url_for, flash
+from flask_wtf.csrf import CSRFProtect
+from flask_login import LoginManager, login_required, current_user
+from config import DevelopmentConfig
+from models import db, Maestro, Alumnos, Preguntas, Respuestas
 from blueprints.alumnos import alumnos_bp
 from blueprints.maestros import maestros_bp
 from blueprints.auth import auth_bp
-from forms import LoginForm
-from flask_wtf.csrf import CSRFProtect
 from datetime import datetime
-from config import DevelopmentConfig
-from models import db, Alumnos, Preguntas, Respuestas, Maestro
 
 # Configuración de la aplicación
 app = Flask(__name__)
@@ -18,164 +16,26 @@ csrf = CSRFProtect(app)
 
 # Configuración del sistema de logs
 logging.basicConfig(
-    filename='app.log',  
-    level=logging.INFO,  
-    format='%(asctime)s - %(levelname)s - %(message)s'  
+    filename='app.log',
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s'
 )
 
 # Configuración de Flask-Login
 login_manager = LoginManager()
 login_manager.init_app(app)
-login_manager.login_view = 'login'
+login_manager.login_view = 'auth.login'
 
 @login_manager.user_loader
 def load_user(maestro_id):
     return Maestro.query.get(int(maestro_id))
 
-@app.route("/logout")
-def logout():
-    if current_user.is_authenticated:
-        logging.info(f"Usuario {current_user.nombre} cerró sesión.")
-    logout_user()
-    return redirect(url_for('login'))
-
-@app.route("/")
-@app.route("/login", methods=["GET", "POST"])
-def login():
-    form = LoginForm()
-    if form.validate_on_submit():
-        maestro = Maestro.query.filter_by(nombre=form.username.data).first()
-        if maestro and maestro.contrasenia == form.password.data:
-            login_user(maestro)
-            logging.info(f"Usuario {maestro.nombre} inició sesión.")
-            return redirect(url_for('index'))
-        else:
-            logging.warning(f"Intento fallido de inicio de sesión para el usuario {form.username.data}.")
-            flash("Usuario o contraseña incorrectos", "danger")
-    return render_template("login.html", form=form)
-
-@app.route("/index")
-@login_required
-def index():
-    logging.info(f"Usuario {current_user.nombre} accedió a la página principal.")
-    return render_template("index.html")
-
-@app.route("/crearA", methods=["GET", "POST"])
-@login_required
-def crearA():
-    create_forms = forms.AlumnoForm(request.form)
-    if request.method == 'POST':
-        alumno = Alumnos(
-            nombre=create_forms.nombre.data,
-            apaterno=create_forms.apaterno.data,
-            amaterno=create_forms.amaterno.data,
-            fecha_nacimiento=create_forms.fecha_nacimiento.data,
-            grupo=create_forms.grupo.data
-        )
-        db.session.add(alumno)
-        db.session.commit()
-        logging.info(f"Usuario {current_user.nombre} agregó un alumno: {alumno.nombre} {alumno.apaterno}.")
-        flash("Alumnos agregado correctamente", "success")
-        return redirect(url_for('crearA'))
-    return render_template("crear_A.html", form=create_forms)
-
-@app.route("/crearE", methods=["GET", "POST"])
-@login_required
-def crearE():
-    create_forms = forms.PreguntaForm(request.form)
-    if request.method == 'POST':
-        pregunta = Preguntas(
-            pregunta=create_forms.pregunta.data,
-            respuesta_a=create_forms.respuesta_a.data,
-            respuesta_b=create_forms.respuesta_b.data,
-            respuesta_c=create_forms.respuesta_c.data,
-            respuesta_d=create_forms.respuesta_d.data,
-            respuesta_correcta=create_forms.respuesta_correcta.data,
-        )
-        db.session.add(pregunta)
-        db.session.commit()
-        logging.info(f"Usuario {current_user.nombre} creó una pregunta: {pregunta.pregunta}.")
-        flash("Pregunta creada", "success")
-    return render_template("crear_E.html", form=create_forms)
-
-@app.route("/resolver/<int:alumno_id>", methods=["GET", "POST"])
-@login_required
-def resolver(alumno_id):
-    preguntas = Preguntas.query.all()
-    alumno = Alumnos.query.get(alumno_id)
-    
-    # Convertir la fecha de nacimiento de string a datetime
-    fecha_nacimiento = datetime.strptime(alumno.fecha_nacimiento, '%d/%m/%Y')
-    hoy = datetime.today()
-    edad = hoy.year - fecha_nacimiento.year - ((hoy.month, hoy.day) < (fecha_nacimiento.month, fecha_nacimiento.day))
-    
-    if request.method == 'POST':
-        respuestas_correctas = 0
-        total_preguntas = len(preguntas)
-        
-        for pregunta in preguntas:
-            respuesta_seleccionada = request.form.get(f'respuesta_{pregunta.id}')
-            if respuesta_seleccionada:
-                respuesta = Respuestas(
-                    alumno_id=alumno.id,
-                    pregunta_id=pregunta.id,
-                    respuesta=respuesta_seleccionada
-                )
-                db.session.add(respuesta)
-                if respuesta_seleccionada == pregunta.respuesta_correcta:
-                    respuestas_correctas += 1
-        
-        calificacion = (respuestas_correctas / total_preguntas) * 100
-        alumno.calificacion = calificacion
-        db.session.commit()
-        
-        logging.info(f"Usuario {current_user.nombre} resolvió el examen del alumno {alumno.nombre}. Calificación: {calificacion}.")
-        flash(f"Examen completado. Calificación: {calificacion}", "success")
-        return redirect(url_for('calif'))
-    
-    return render_template("resolver.html", preguntas=preguntas, alumno=alumno, edad=edad)
-
-@app.route("/calif")
-@login_required
-def calif():
-    grupos = db.session.query(Alumnos.grupo).distinct().all()
-    alumnos = Alumnos.query.all()
-    logging.info(f"Usuario {current_user.nombre} accedió a la página de calificaciones.")
-    return render_template("calif.html", grupos=grupos, alumnos=alumnos)
-
-@app.route("/load_group")
-@login_required
-def load_group():
-    group = request.args.get('group')
-    filtered_alumnos = Alumnos.query.filter_by(grupo=group).all()
-    alumnos_data = [{'nombre': alum.nombre, 'apaterno': alum.apaterno, 'amaterno': alum.amaterno, 'grupo': alum.grupo, 'calificacion': alum.calificacion} for alum in filtered_alumnos]
-    logging.info(f"Usuario {current_user.nombre} cargó el grupo {group}.")
-    return jsonify({'alumnos': alumnos_data})
-
-@app.route("/buscar_A", methods=["GET", "POST"])
-@login_required
-def buscar_A():
-    if request.method == 'POST':
-        nombre = request.form['nombre']
-        apaterno = request.form['apaterno'] 
-        alumno = Alumnos.query.filter_by(
-            nombre=nombre,
-            apaterno=apaterno,
-        ).first()
-        
-        if alumno:
-            logging.info(f"Usuario {current_user.nombre} buscó al alumno {nombre} {apaterno}.")
-            return redirect(url_for('resolver', alumno_id=alumno.id))
-        else:
-            logging.warning(f"Usuario {current_user.nombre} intentó buscar un alumno no encontrado: {nombre} {apaterno}.")
-            flash("Alumno no encontrado", "danger")
-            return redirect(url_for('buscar_A'))
-    
-    return render_template("buscar_A.html", )
-
+# Registrar Blueprints
 app.register_blueprint(alumnos_bp)
 app.register_blueprint(maestros_bp)
 app.register_blueprint(auth_bp)
+
+
 
 if __name__ == '__main__':
     csrf.init_app(app)

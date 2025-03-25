@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Maestro</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <h1>Editar Maestro</h1>
+    <form method="POST" action="{{ url_for('maestros.editar_maestro', id=maestro.id) }}">
+        {{ form.csrf_token }}
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" value="{{ maestro.nombre }}" required>
+        <br>
+        <label for="contrasenia">Contraseña:</label>
+        <input type="password" id="contrasenia" name="contrasenia" value="{{ maestro.contrasenia }}" required>
+        <br>
+        <button type="submit">Guardar Cambios</button>
+    </form>
+    <a href="{{ url_for('maestros.maestros') }}">Cancelar</a>
+</body>
+
+</html>

@@ -97,3 +97,365 @@
 2025-03-25 15:54:36,560 - INFO - 127.0.0.1 - - [25/Mar/2025 15:54:36] "[32mGET /logout HTTP/1.1[0m" 302 -
 2025-03-25 15:54:36,887 - INFO - 127.0.0.1 - - [25/Mar/2025 15:54:36] "GET /login HTTP/1.1" 200 -
 2025-03-25 15:54:37,138 - INFO - 127.0.0.1 - - [25/Mar/2025 15:54:37] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 15:56:58,834 - INFO -  * Detected change in 'c:\\Users\\vayro\\OneDrive\\Escritorio\\8VO\\8VO\\DESARROLLO WEB PRO\\examen\\app.py', reloading
+2025-03-25 15:56:58,991 - INFO -  * Restarting with stat
+2025-03-25 15:57:00,714 - INFO - Aplicación iniciada.
+2025-03-25 15:57:00,743 - WARNING -  * Debugger is active!
+2025-03-25 15:57:00,754 - INFO -  * Debugger PIN: 415-088-164
+2025-03-25 15:57:09,943 - INFO - 127.0.0.1 - - [25/Mar/2025 15:57:09] "[33mGET / HTTP/1.1[0m" 404 -
+2025-03-25 15:57:11,531 - INFO - 127.0.0.1 - - [25/Mar/2025 15:57:11] "[33mGET / HTTP/1.1[0m" 404 -
+2025-03-25 15:58:30,617 - INFO -  * Detected change in 'c:\\Users\\vayro\\OneDrive\\Escritorio\\8VO\\8VO\\DESARROLLO WEB PRO\\examen\\blueprints\\auth.py', reloading
+2025-03-25 15:58:30,763 - INFO -  * Restarting with stat
+2025-03-25 15:58:32,387 - INFO - Aplicación iniciada.
+2025-03-25 15:58:32,422 - WARNING -  * Debugger is active!
+2025-03-25 15:58:32,429 - INFO -  * Debugger PIN: 415-088-164
+2025-03-25 15:58:33,359 - INFO - 127.0.0.1 - - [25/Mar/2025 15:58:33] "[32mGET / HTTP/1.1[0m" 302 -
+2025-03-25 15:58:33,623 - INFO - 127.0.0.1 - - [25/Mar/2025 15:58:33] "GET /login HTTP/1.1" 200 -
+2025-03-25 15:58:33,750 - INFO - 127.0.0.1 - - [25/Mar/2025 15:58:33] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 15:58:38,594 - INFO - Usuario vayron inició sesión.
+2025-03-25 15:58:38,598 - INFO - 127.0.0.1 - - [25/Mar/2025 15:58:38] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-25 15:58:39,063 - INFO - 127.0.0.1 - - [25/Mar/2025 15:58:39] "[35m[1mGET /alumnos HTTP/1.1[0m" 500 -
+2025-03-25 15:58:39,210 - INFO - 127.0.0.1 - - [25/Mar/2025 15:58:39] "GET /alumnos?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-03-25 15:58:39,484 - INFO - 127.0.0.1 - - [25/Mar/2025 15:58:39] "GET /alumnos?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-03-25 15:58:39,584 - INFO - 127.0.0.1 - - [25/Mar/2025 15:58:39] "GET /alumnos?__debugger__=yes&cmd=resource&f=console.png&s=Z9TbDW4pd6B20XlnbHwN HTTP/1.1" 200 -
+2025-03-25 15:58:39,947 - INFO - 127.0.0.1 - - [25/Mar/2025 15:58:39] "GET /alumnos?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-25 16:02:47,030 - INFO -  * Detected change in 'c:\\Users\\vayro\\OneDrive\\Escritorio\\8VO\\8VO\\DESARROLLO WEB PRO\\examen\\blueprints\\auth.py', reloading
+2025-03-25 16:02:47,247 - INFO -  * Restarting with stat
+2025-03-25 16:02:48,917 - INFO - Aplicación iniciada.
+2025-03-25 16:02:48,947 - WARNING -  * Debugger is active!
+2025-03-25 16:02:48,957 - INFO -  * Debugger PIN: 415-088-164
+2025-03-25 16:02:51,428 - INFO - 127.0.0.1 - - [25/Mar/2025 16:02:51] "[35m[1mGET /alumnos HTTP/1.1[0m" 500 -
+2025-03-25 16:02:51,643 - INFO - 127.0.0.1 - - [25/Mar/2025 16:02:51] "[36mGET /alumnos?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-25 16:02:51,785 - INFO - 127.0.0.1 - - [25/Mar/2025 16:02:51] "[36mGET /alumnos?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-25 16:02:51,820 - INFO - 127.0.0.1 - - [25/Mar/2025 16:02:51] "GET /alumnos?__debugger__=yes&cmd=resource&f=console.png&s=VAsnXt2e65RXcSOson5l HTTP/1.1" 200 -
+2025-03-25 16:02:52,192 - INFO - 127.0.0.1 - - [25/Mar/2025 16:02:52] "[36mGET /alumnos?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-03-25 16:02:56,518 - INFO - Usuario vayron inició sesión.
+2025-03-25 16:02:56,521 - INFO - 127.0.0.1 - - [25/Mar/2025 16:02:56] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-25 16:02:56,900 - INFO - 127.0.0.1 - - [25/Mar/2025 16:02:56] "[35m[1mGET /alumnos HTTP/1.1[0m" 500 -
+2025-03-25 16:02:57,098 - INFO - 127.0.0.1 - - [25/Mar/2025 16:02:57] "[36mGET /alumnos?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-25 16:02:57,275 - INFO - 127.0.0.1 - - [25/Mar/2025 16:02:57] "[36mGET /alumnos?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-25 16:02:57,301 - INFO - 127.0.0.1 - - [25/Mar/2025 16:02:57] "[36mGET /alumnos?__debugger__=yes&cmd=resource&f=console.png&s=VAsnXt2e65RXcSOson5l HTTP/1.1[0m" 304 -
+2025-03-25 16:03:17,236 - INFO -  * Detected change in 'c:\\Users\\vayro\\OneDrive\\Escritorio\\8VO\\8VO\\DESARROLLO WEB PRO\\examen\\blueprints\\auth.py', reloading
+2025-03-25 16:03:17,414 - INFO -  * Restarting with stat
+2025-03-25 16:03:18,919 - INFO - Aplicación iniciada.
+2025-03-25 16:03:18,963 - WARNING -  * Debugger is active!
+2025-03-25 16:03:18,967 - INFO -  * Debugger PIN: 415-088-164
+2025-03-25 16:05:39,147 - INFO -  * Detected change in 'c:\\Users\\vayro\\OneDrive\\Escritorio\\8VO\\8VO\\DESARROLLO WEB PRO\\examen\\blueprints\\alumnos.py', reloading
+2025-03-25 16:05:39,407 - INFO -  * Restarting with stat
+2025-03-25 16:05:40,988 - INFO - Aplicación iniciada.
+2025-03-25 16:05:41,020 - WARNING -  * Debugger is active!
+2025-03-25 16:05:41,026 - INFO -  * Debugger PIN: 415-088-164
+2025-03-25 16:06:13,723 - INFO -  * Detected change in 'c:\\Users\\vayro\\OneDrive\\Escritorio\\8VO\\8VO\\DESARROLLO WEB PRO\\examen\\app.py', reloading
+2025-03-25 16:06:13,868 - INFO -  * Restarting with stat
+2025-03-25 16:06:15,575 - INFO - Aplicación iniciada.
+2025-03-25 16:06:15,603 - WARNING -  * Debugger is active!
+2025-03-25 16:06:15,614 - INFO -  * Debugger PIN: 415-088-164
+2025-03-25 16:06:19,003 - INFO - 127.0.0.1 - - [25/Mar/2025 16:06:19] "[32mGET / HTTP/1.1[0m" 302 -
+2025-03-25 16:06:19,305 - INFO - 127.0.0.1 - - [25/Mar/2025 16:06:19] "GET /login HTTP/1.1" 200 -
+2025-03-25 16:06:19,417 - INFO - 127.0.0.1 - - [25/Mar/2025 16:06:19] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:06:24,816 - INFO - Usuario vayron inició sesión.
+2025-03-25 16:06:24,819 - INFO - 127.0.0.1 - - [25/Mar/2025 16:06:24] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-25 16:06:25,132 - INFO - 127.0.0.1 - - [25/Mar/2025 16:06:25] "[35m[1mGET /alumnos HTTP/1.1[0m" 500 -
+2025-03-25 16:06:25,196 - INFO - 127.0.0.1 - - [25/Mar/2025 16:06:25] "[36mGET /alumnos?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-25 16:06:25,508 - INFO - 127.0.0.1 - - [25/Mar/2025 16:06:25] "[36mGET /alumnos?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-25 16:06:25,850 - INFO - 127.0.0.1 - - [25/Mar/2025 16:06:25] "GET /alumnos?__debugger__=yes&cmd=resource&f=console.png&s=Qf3gpUI8EuNH5ZMKTDzG HTTP/1.1" 200 -
+2025-03-25 16:09:42,565 - INFO -  * Detected change in 'c:\\Users\\vayro\\OneDrive\\Escritorio\\8VO\\8VO\\DESARROLLO WEB PRO\\examen\\app.py', reloading
+2025-03-25 16:09:42,714 - INFO -  * Restarting with stat
+2025-03-25 16:09:44,288 - INFO - Aplicación iniciada.
+2025-03-25 16:09:44,331 - WARNING -  * Debugger is active!
+2025-03-25 16:09:44,337 - INFO -  * Debugger PIN: 415-088-164
+2025-03-25 16:10:00,184 - INFO -  * Detected change in 'c:\\Users\\vayro\\OneDrive\\Escritorio\\8VO\\8VO\\DESARROLLO WEB PRO\\examen\\blueprints\\alumnos.py', reloading
+2025-03-25 16:10:00,327 - INFO -  * Restarting with stat
+2025-03-25 16:10:02,025 - INFO - Aplicación iniciada.
+2025-03-25 16:10:02,058 - WARNING -  * Debugger is active!
+2025-03-25 16:10:02,067 - INFO -  * Debugger PIN: 415-088-164
+2025-03-25 16:10:14,550 - INFO -  * Detected change in 'c:\\Users\\vayro\\OneDrive\\Escritorio\\8VO\\8VO\\DESARROLLO WEB PRO\\examen\\app.py', reloading
+2025-03-25 16:10:14,743 - INFO -  * Restarting with stat
+2025-03-25 16:10:16,308 - INFO - Aplicación iniciada.
+2025-03-25 16:10:16,347 - WARNING -  * Debugger is active!
+2025-03-25 16:10:16,356 - INFO -  * Debugger PIN: 415-088-164
+2025-03-25 16:10:16,857 - INFO - 127.0.0.1 - - [25/Mar/2025 16:10:16] "[33mGET /alumnos HTTP/1.1[0m" 404 -
+2025-03-25 16:10:21,288 - INFO - Usuario vayron accedió a la página principal.
+2025-03-25 16:10:21,304 - INFO - 127.0.0.1 - - [25/Mar/2025 16:10:21] "GET /index HTTP/1.1" 200 -
+2025-03-25 16:10:21,739 - INFO - 127.0.0.1 - - [25/Mar/2025 16:10:21] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:10:26,766 - INFO - 127.0.0.1 - - [25/Mar/2025 16:10:26] "GET / HTTP/1.1" 200 -
+2025-03-25 16:10:27,114 - INFO - 127.0.0.1 - - [25/Mar/2025 16:10:27] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:10:32,931 - INFO - Usuario vayron inició sesión.
+2025-03-25 16:10:32,933 - INFO - 127.0.0.1 - - [25/Mar/2025 16:10:32] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-25 16:10:33,252 - INFO - Usuario vayron accedió a la página principal.
+2025-03-25 16:10:33,254 - INFO - 127.0.0.1 - - [25/Mar/2025 16:10:33] "GET /index HTTP/1.1" 200 -
+2025-03-25 16:10:33,515 - INFO - 127.0.0.1 - - [25/Mar/2025 16:10:33] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:10:34,921 - INFO - 127.0.0.1 - - [25/Mar/2025 16:10:34] "GET /crearE HTTP/1.1" 200 -
+2025-03-25 16:10:35,270 - INFO - 127.0.0.1 - - [25/Mar/2025 16:10:35] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:10:37,477 - INFO - 127.0.0.1 - - [25/Mar/2025 16:10:37] "GET /crearA HTTP/1.1" 200 -
+2025-03-25 16:10:37,831 - INFO - 127.0.0.1 - - [25/Mar/2025 16:10:37] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:10:39,754 - INFO - Usuario vayron accedió a la página de calificaciones.
+2025-03-25 16:10:39,827 - INFO - 127.0.0.1 - - [25/Mar/2025 16:10:39] "GET /calif HTTP/1.1" 200 -
+2025-03-25 16:10:40,270 - INFO - 127.0.0.1 - - [25/Mar/2025 16:10:40] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:10:42,853 - INFO - 127.0.0.1 - - [25/Mar/2025 16:10:42] "GET /buscar_A HTTP/1.1" 200 -
+2025-03-25 16:10:43,208 - INFO - 127.0.0.1 - - [25/Mar/2025 16:10:43] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:10:46,323 - INFO - Usuario vayron cerró sesión.
+2025-03-25 16:10:46,331 - INFO - 127.0.0.1 - - [25/Mar/2025 16:10:46] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-03-25 16:10:46,647 - INFO - 127.0.0.1 - - [25/Mar/2025 16:10:46] "GET /login HTTP/1.1" 200 -
+2025-03-25 16:10:46,903 - INFO - 127.0.0.1 - - [25/Mar/2025 16:10:46] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:10:59,624 - INFO -  * Detected change in 'c:\\Users\\vayro\\OneDrive\\Escritorio\\8VO\\8VO\\DESARROLLO WEB PRO\\examen\\blueprints\\auth.py', reloading
+2025-03-25 16:10:59,760 - INFO -  * Restarting with stat
+2025-03-25 16:11:01,252 - INFO - Aplicación iniciada.
+2025-03-25 16:11:01,294 - WARNING -  * Debugger is active!
+2025-03-25 16:11:01,303 - INFO -  * Debugger PIN: 415-088-164
+2025-03-25 16:13:36,878 - INFO -  * Detected change in 'c:\\Users\\vayro\\OneDrive\\Escritorio\\8VO\\8VO\\DESARROLLO WEB PRO\\examen\\blueprints\\alumnos.py', reloading
+2025-03-25 16:13:37,034 - INFO -  * Restarting with stat
+2025-03-25 16:13:38,573 - INFO - Aplicación iniciada.
+2025-03-25 16:13:38,612 - WARNING -  * Debugger is active!
+2025-03-25 16:13:38,619 - INFO -  * Debugger PIN: 415-088-164
+2025-03-25 16:13:42,210 - INFO -  * Detected change in 'c:\\Users\\vayro\\OneDrive\\Escritorio\\8VO\\8VO\\DESARROLLO WEB PRO\\examen\\blueprints\\maestros.py', reloading
+2025-03-25 16:13:42,388 - INFO -  * Restarting with stat
+2025-03-25 16:13:43,983 - INFO - Aplicación iniciada.
+2025-03-25 16:13:44,010 - WARNING -  * Debugger is active!
+2025-03-25 16:13:44,017 - INFO -  * Debugger PIN: 415-088-164
+2025-03-25 16:14:18,961 - INFO -  * Detected change in 'c:\\Users\\vayro\\OneDrive\\Escritorio\\8VO\\8VO\\DESARROLLO WEB PRO\\examen\\app.py', reloading
+2025-03-25 16:14:19,105 - INFO -  * Restarting with stat
+2025-03-25 16:14:20,757 - INFO - Aplicación iniciada.
+2025-03-25 16:14:20,800 - WARNING -  * Debugger is active!
+2025-03-25 16:14:20,811 - INFO -  * Debugger PIN: 415-088-164
+2025-03-25 16:14:48,010 - INFO -  * Detected change in 'c:\\Users\\vayro\\OneDrive\\Escritorio\\8VO\\8VO\\DESARROLLO WEB PRO\\examen\\app.py', reloading
+2025-03-25 16:14:48,204 - INFO -  * Restarting with stat
+2025-03-25 16:14:49,890 - INFO - Aplicación iniciada.
+2025-03-25 16:14:49,927 - WARNING -  * Debugger is active!
+2025-03-25 16:14:49,937 - INFO -  * Debugger PIN: 415-088-164
+2025-03-25 16:15:29,485 - INFO -  * Detected change in 'c:\\Users\\vayro\\OneDrive\\Escritorio\\8VO\\8VO\\DESARROLLO WEB PRO\\examen\\blueprints\\alumnos.py', reloading
+2025-03-25 16:15:29,626 - INFO -  * Restarting with stat
+2025-03-25 16:15:31,187 - INFO - Aplicación iniciada.
+2025-03-25 16:15:31,217 - WARNING -  * Debugger is active!
+2025-03-25 16:15:31,223 - INFO -  * Debugger PIN: 415-088-164
+2025-03-25 16:15:33,461 - INFO - 127.0.0.1 - - [25/Mar/2025 16:15:33] "GET /login HTTP/1.1" 200 -
+2025-03-25 16:15:33,799 - INFO - 127.0.0.1 - - [25/Mar/2025 16:15:33] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:15:39,077 - INFO - Usuario vayron inició sesión.
+2025-03-25 16:15:39,085 - INFO - 127.0.0.1 - - [25/Mar/2025 16:15:39] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-25 16:15:39,420 - INFO - Usuario vayron accedió a la página de calificaciones.
+2025-03-25 16:15:39,620 - INFO - 127.0.0.1 - - [25/Mar/2025 16:15:39] "[35m[1mGET /calif HTTP/1.1[0m" 500 -
+2025-03-25 16:15:39,672 - INFO - 127.0.0.1 - - [25/Mar/2025 16:15:39] "GET /calif?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-03-25 16:15:39,977 - INFO - 127.0.0.1 - - [25/Mar/2025 16:15:39] "GET /calif?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-03-25 16:15:40,308 - INFO - 127.0.0.1 - - [25/Mar/2025 16:15:40] "GET /calif?__debugger__=yes&cmd=resource&f=console.png&s=Z17C6BeZbiVmzNn1gJoG HTTP/1.1" 200 -
+2025-03-25 16:15:40,570 - INFO - 127.0.0.1 - - [25/Mar/2025 16:15:40] "GET /calif?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-25 16:16:21,049 - INFO - Usuario vayron accedió a la página de calificaciones.
+2025-03-25 16:16:21,164 - INFO - 127.0.0.1 - - [25/Mar/2025 16:16:21] "[35m[1mGET /calif HTTP/1.1[0m" 500 -
+2025-03-25 16:16:21,511 - INFO - 127.0.0.1 - - [25/Mar/2025 16:16:21] "[36mGET /calif?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-25 16:16:21,517 - INFO - 127.0.0.1 - - [25/Mar/2025 16:16:21] "[36mGET /calif?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-25 16:16:21,748 - INFO - 127.0.0.1 - - [25/Mar/2025 16:16:21] "[36mGET /calif?__debugger__=yes&cmd=resource&f=console.png&s=Z17C6BeZbiVmzNn1gJoG HTTP/1.1[0m" 304 -
+2025-03-25 16:16:21,852 - INFO - 127.0.0.1 - - [25/Mar/2025 16:16:21] "[36mGET /calif?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-03-25 16:16:30,373 - INFO - Usuario vayron accedió a la página de calificaciones.
+2025-03-25 16:16:30,419 - INFO - 127.0.0.1 - - [25/Mar/2025 16:16:30] "GET /calif HTTP/1.1" 200 -
+2025-03-25 16:16:30,777 - INFO - 127.0.0.1 - - [25/Mar/2025 16:16:30] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:16:34,402 - INFO - 127.0.0.1 - - [25/Mar/2025 16:16:34] "[32mGET / HTTP/1.1[0m" 302 -
+2025-03-25 16:16:34,717 - INFO - 127.0.0.1 - - [25/Mar/2025 16:16:34] "GET /login HTTP/1.1" 200 -
+2025-03-25 16:16:34,982 - INFO - 127.0.0.1 - - [25/Mar/2025 16:16:34] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:16:40,951 - INFO - Usuario vayron inició sesión.
+2025-03-25 16:16:40,957 - INFO - 127.0.0.1 - - [25/Mar/2025 16:16:40] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-25 16:16:41,282 - INFO - Usuario vayron accedió a la página de calificaciones.
+2025-03-25 16:16:41,290 - INFO - 127.0.0.1 - - [25/Mar/2025 16:16:41] "GET /calif HTTP/1.1" 200 -
+2025-03-25 16:16:41,543 - INFO - 127.0.0.1 - - [25/Mar/2025 16:16:41] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:17:00,623 - INFO -  * Detected change in 'c:\\Users\\vayro\\OneDrive\\Escritorio\\8VO\\8VO\\DESARROLLO WEB PRO\\examen\\blueprints\\auth.py', reloading
+2025-03-25 16:17:00,852 - INFO -  * Restarting with stat
+2025-03-25 16:17:02,396 - INFO - Aplicación iniciada.
+2025-03-25 16:17:02,431 - WARNING -  * Debugger is active!
+2025-03-25 16:17:02,431 - INFO -  * Debugger PIN: 415-088-164
+2025-03-25 16:17:02,679 - INFO - Usuario vayron accedió a la página de calificaciones.
+2025-03-25 16:17:02,765 - INFO - 127.0.0.1 - - [25/Mar/2025 16:17:02] "[35m[1mGET /calif HTTP/1.1[0m" 500 -
+2025-03-25 16:17:02,972 - INFO - 127.0.0.1 - - [25/Mar/2025 16:17:02] "[36mGET /calif?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-25 16:17:03,099 - INFO - 127.0.0.1 - - [25/Mar/2025 16:17:03] "[36mGET /calif?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-25 16:17:03,126 - INFO - 127.0.0.1 - - [25/Mar/2025 16:17:03] "GET /calif?__debugger__=yes&cmd=resource&f=console.png&s=HFBmG4D6Wi0ggFfs2LAs HTTP/1.1" 200 -
+2025-03-25 16:17:03,494 - INFO - 127.0.0.1 - - [25/Mar/2025 16:17:03] "[36mGET /calif?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-03-25 16:17:30,863 - INFO -  * Detected change in 'c:\\Users\\vayro\\OneDrive\\Escritorio\\8VO\\8VO\\DESARROLLO WEB PRO\\examen\\app.py', reloading
+2025-03-25 16:17:31,044 - INFO -  * Restarting with stat
+2025-03-25 16:21:19,339 - INFO - Aplicación iniciada.
+2025-03-25 16:21:19,401 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-25 16:21:19,401 - INFO - [33mPress CTRL+C to quit[0m
+2025-03-25 16:21:19,402 - INFO -  * Restarting with stat
+2025-03-25 16:21:20,920 - INFO - Aplicación iniciada.
+2025-03-25 16:21:20,958 - WARNING -  * Debugger is active!
+2025-03-25 16:21:20,965 - INFO -  * Debugger PIN: 415-088-164
+2025-03-25 16:21:24,747 - INFO - Usuario vayron accedió a la página de calificaciones.
+2025-03-25 16:21:24,776 - INFO - 127.0.0.1 - - [25/Mar/2025 16:21:24] "GET /calif HTTP/1.1" 200 -
+2025-03-25 16:21:25,052 - INFO - 127.0.0.1 - - [25/Mar/2025 16:21:25] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:21:26,423 - INFO - 127.0.0.1 - - [25/Mar/2025 16:21:26] "[35m[1mGET /index HTTP/1.1[0m" 500 -
+2025-03-25 16:21:26,788 - INFO - 127.0.0.1 - - [25/Mar/2025 16:21:26] "GET /index?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-03-25 16:21:26,788 - INFO - 127.0.0.1 - - [25/Mar/2025 16:21:26] "GET /index?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-03-25 16:21:27,050 - INFO - 127.0.0.1 - - [25/Mar/2025 16:21:27] "GET /index?__debugger__=yes&cmd=resource&f=console.png&s=mpzzcZ0xELSoV6OUvZB8 HTTP/1.1" 200 -
+2025-03-25 16:21:27,177 - INFO - 127.0.0.1 - - [25/Mar/2025 16:21:27] "GET /index?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-25 16:21:48,182 - INFO - 127.0.0.1 - - [25/Mar/2025 16:21:48] "[35m[1mGET /index HTTP/1.1[0m" 500 -
+2025-03-25 16:21:48,534 - INFO - 127.0.0.1 - - [25/Mar/2025 16:21:48] "[36mGET /index?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-25 16:21:48,534 - INFO - 127.0.0.1 - - [25/Mar/2025 16:21:48] "[36mGET /index?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-25 16:21:48,783 - INFO - 127.0.0.1 - - [25/Mar/2025 16:21:48] "[36mGET /index?__debugger__=yes&cmd=resource&f=console.png&s=mpzzcZ0xELSoV6OUvZB8 HTTP/1.1[0m" 304 -
+2025-03-25 16:21:48,868 - INFO - 127.0.0.1 - - [25/Mar/2025 16:21:48] "[36mGET /index?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-03-25 16:21:58,795 - INFO - 127.0.0.1 - - [25/Mar/2025 16:21:58] "[35m[1mGET /index HTTP/1.1[0m" 500 -
+2025-03-25 16:21:59,148 - INFO - 127.0.0.1 - - [25/Mar/2025 16:21:59] "[36mGET /index?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-25 16:21:59,148 - INFO - 127.0.0.1 - - [25/Mar/2025 16:21:59] "[36mGET /index?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-25 16:21:59,400 - INFO - 127.0.0.1 - - [25/Mar/2025 16:21:59] "[36mGET /index?__debugger__=yes&cmd=resource&f=console.png&s=mpzzcZ0xELSoV6OUvZB8 HTTP/1.1[0m" 304 -
+2025-03-25 16:21:59,479 - INFO - 127.0.0.1 - - [25/Mar/2025 16:21:59] "[36mGET /index?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-03-25 16:22:08,465 - INFO - 127.0.0.1 - - [25/Mar/2025 16:22:08] "GET /index HTTP/1.1" 200 -
+2025-03-25 16:22:08,822 - INFO - 127.0.0.1 - - [25/Mar/2025 16:22:08] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:22:10,251 - INFO - 127.0.0.1 - - [25/Mar/2025 16:22:10] "GET /crearA HTTP/1.1" 200 -
+2025-03-25 16:22:10,626 - INFO - 127.0.0.1 - - [25/Mar/2025 16:22:10] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:22:12,209 - INFO - 127.0.0.1 - - [25/Mar/2025 16:22:12] "GET /index HTTP/1.1" 200 -
+2025-03-25 16:22:12,572 - INFO - 127.0.0.1 - - [25/Mar/2025 16:22:12] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:22:13,513 - INFO - 127.0.0.1 - - [25/Mar/2025 16:22:13] "GET /crearE HTTP/1.1" 200 -
+2025-03-25 16:22:13,882 - INFO - 127.0.0.1 - - [25/Mar/2025 16:22:13] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:22:15,002 - INFO - 127.0.0.1 - - [25/Mar/2025 16:22:15] "GET /index HTTP/1.1" 200 -
+2025-03-25 16:22:15,365 - INFO - 127.0.0.1 - - [25/Mar/2025 16:22:15] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:22:16,128 - INFO - Usuario vayron accedió a la página de calificaciones.
+2025-03-25 16:22:16,128 - INFO - 127.0.0.1 - - [25/Mar/2025 16:22:16] "GET /calif HTTP/1.1" 200 -
+2025-03-25 16:22:16,488 - INFO - 127.0.0.1 - - [25/Mar/2025 16:22:16] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:22:17,633 - INFO - 127.0.0.1 - - [25/Mar/2025 16:22:17] "GET /index HTTP/1.1" 200 -
+2025-03-25 16:22:17,997 - INFO - 127.0.0.1 - - [25/Mar/2025 16:22:17] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:22:18,789 - INFO - 127.0.0.1 - - [25/Mar/2025 16:22:18] "[35m[1mGET /buscar_A HTTP/1.1[0m" 500 -
+2025-03-25 16:22:19,160 - INFO - 127.0.0.1 - - [25/Mar/2025 16:22:19] "GET /buscar_A?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-03-25 16:22:19,160 - INFO - 127.0.0.1 - - [25/Mar/2025 16:22:19] "GET /buscar_A?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-03-25 16:22:19,403 - INFO - 127.0.0.1 - - [25/Mar/2025 16:22:19] "GET /buscar_A?__debugger__=yes&cmd=resource&f=console.png&s=mpzzcZ0xELSoV6OUvZB8 HTTP/1.1" 200 -
+2025-03-25 16:22:19,500 - INFO - 127.0.0.1 - - [25/Mar/2025 16:22:19] "GET /buscar_A?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-25 16:22:36,161 - INFO - 127.0.0.1 - - [25/Mar/2025 16:22:36] "GET /buscar_A HTTP/1.1" 200 -
+2025-03-25 16:22:36,508 - INFO - 127.0.0.1 - - [25/Mar/2025 16:22:36] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:22:42,066 - INFO - Usuario vayron buscó al alumno Vayron Granados.
+2025-03-25 16:22:42,113 - INFO - 127.0.0.1 - - [25/Mar/2025 16:22:42] "[35m[1mPOST /buscar_A HTTP/1.1[0m" 500 -
+2025-03-25 16:22:42,468 - INFO - 127.0.0.1 - - [25/Mar/2025 16:22:42] "[36mGET /buscar_A?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-25 16:22:42,468 - INFO - 127.0.0.1 - - [25/Mar/2025 16:22:42] "[36mGET /buscar_A?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-25 16:22:42,715 - INFO - 127.0.0.1 - - [25/Mar/2025 16:22:42] "[36mGET /buscar_A?__debugger__=yes&cmd=resource&f=console.png&s=mpzzcZ0xELSoV6OUvZB8 HTTP/1.1[0m" 304 -
+2025-03-25 16:22:42,802 - INFO - 127.0.0.1 - - [25/Mar/2025 16:22:42] "[36mGET /buscar_A?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-03-25 16:23:36,963 - INFO -  * Detected change in 'c:\\Users\\vayro\\OneDrive\\Escritorio\\8VO\\8VO\\DESARROLLO WEB PRO\\examen\\blueprints\\alumnos.py', reloading
+2025-03-25 16:23:37,099 - INFO -  * Restarting with stat
+2025-03-25 16:23:38,710 - INFO - Aplicación iniciada.
+2025-03-25 16:23:38,744 - WARNING -  * Debugger is active!
+2025-03-25 16:23:38,752 - INFO -  * Debugger PIN: 415-088-164
+2025-03-25 16:24:45,140 - INFO -  * Detected change in 'c:\\Users\\vayro\\OneDrive\\Escritorio\\8VO\\8VO\\DESARROLLO WEB PRO\\examen\\blueprints\\alumnos.py', reloading
+2025-03-25 16:24:45,286 - INFO -  * Restarting with stat
+2025-03-25 16:24:46,822 - INFO - Aplicación iniciada.
+2025-03-25 16:24:46,839 - WARNING -  * Debugger is active!
+2025-03-25 16:24:46,854 - INFO -  * Debugger PIN: 415-088-164
+2025-03-25 16:24:48,043 - INFO - Usuario vayron buscó al alumno Vayron Granados.
+2025-03-25 16:24:48,050 - INFO - 127.0.0.1 - - [25/Mar/2025 16:24:48] "[32mPOST /buscar_A HTTP/1.1[0m" 302 -
+2025-03-25 16:24:48,406 - INFO - 127.0.0.1 - - [25/Mar/2025 16:24:48] "[35m[1mGET /resolver/2 HTTP/1.1[0m" 500 -
+2025-03-25 16:24:48,537 - INFO - 127.0.0.1 - - [25/Mar/2025 16:24:48] "GET /resolver/2?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-03-25 16:24:48,767 - INFO - 127.0.0.1 - - [25/Mar/2025 16:24:48] "GET /resolver/2?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-03-25 16:24:49,107 - INFO - 127.0.0.1 - - [25/Mar/2025 16:24:49] "GET /resolver/2?__debugger__=yes&cmd=resource&f=console.png&s=i4Qi3s7p06I4QZGD4yds HTTP/1.1" 200 -
+2025-03-25 16:24:49,357 - INFO - 127.0.0.1 - - [25/Mar/2025 16:24:49] "GET /resolver/2?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-25 16:24:55,095 - INFO - 127.0.0.1 - - [25/Mar/2025 16:24:55] "GET / HTTP/1.1" 200 -
+2025-03-25 16:24:55,456 - INFO - 127.0.0.1 - - [25/Mar/2025 16:24:55] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:25:00,783 - INFO - Usuario vayron inició sesión.
+2025-03-25 16:25:00,827 - INFO - 127.0.0.1 - - [25/Mar/2025 16:25:00] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2025-03-25 16:25:01,184 - INFO - 127.0.0.1 - - [25/Mar/2025 16:25:01] "GET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-03-25 16:25:01,184 - INFO - 127.0.0.1 - - [25/Mar/2025 16:25:01] "GET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-03-25 16:25:01,454 - INFO - 127.0.0.1 - - [25/Mar/2025 16:25:01] "GET /login?__debugger__=yes&cmd=resource&f=console.png&s=i4Qi3s7p06I4QZGD4yds HTTP/1.1" 200 -
+2025-03-25 16:25:01,513 - INFO - 127.0.0.1 - - [25/Mar/2025 16:25:01] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-03-25 16:26:10,544 - INFO -  * Detected change in 'c:\\Users\\vayro\\OneDrive\\Escritorio\\8VO\\8VO\\DESARROLLO WEB PRO\\examen\\blueprints\\auth.py', reloading
+2025-03-25 16:26:10,801 - INFO -  * Restarting with stat
+2025-03-25 16:26:12,279 - INFO - Aplicación iniciada.
+2025-03-25 16:26:12,313 - WARNING -  * Debugger is active!
+2025-03-25 16:26:12,322 - INFO -  * Debugger PIN: 415-088-164
+2025-03-25 16:26:14,422 - INFO - Usuario vayron inició sesión.
+2025-03-25 16:26:14,427 - INFO - 127.0.0.1 - - [25/Mar/2025 16:26:14] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-25 16:26:14,688 - INFO - 127.0.0.1 - - [25/Mar/2025 16:26:14] "GET /index HTTP/1.1" 200 -
+2025-03-25 16:26:14,844 - INFO - 127.0.0.1 - - [25/Mar/2025 16:26:14] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:26:18,334 - INFO - 127.0.0.1 - - [25/Mar/2025 16:26:18] "GET / HTTP/1.1" 200 -
+2025-03-25 16:26:18,700 - INFO - 127.0.0.1 - - [25/Mar/2025 16:26:18] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:26:35,230 - INFO - Usuario vayron inició sesión.
+2025-03-25 16:26:35,234 - INFO - 127.0.0.1 - - [25/Mar/2025 16:26:35] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-25 16:26:35,563 - INFO - 127.0.0.1 - - [25/Mar/2025 16:26:35] "GET /index HTTP/1.1" 200 -
+2025-03-25 16:26:35,807 - INFO - 127.0.0.1 - - [25/Mar/2025 16:26:35] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:26:37,101 - INFO - 127.0.0.1 - - [25/Mar/2025 16:26:37] "GET /crearA HTTP/1.1" 200 -
+2025-03-25 16:26:37,455 - INFO - 127.0.0.1 - - [25/Mar/2025 16:26:37] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:26:39,067 - INFO - 127.0.0.1 - - [25/Mar/2025 16:26:39] "GET /index HTTP/1.1" 200 -
+2025-03-25 16:26:39,440 - INFO - 127.0.0.1 - - [25/Mar/2025 16:26:39] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:26:40,229 - INFO - 127.0.0.1 - - [25/Mar/2025 16:26:40] "GET /crearE HTTP/1.1" 200 -
+2025-03-25 16:26:40,588 - INFO - 127.0.0.1 - - [25/Mar/2025 16:26:40] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:26:41,564 - INFO - 127.0.0.1 - - [25/Mar/2025 16:26:41] "GET /index HTTP/1.1" 200 -
+2025-03-25 16:26:41,926 - INFO - 127.0.0.1 - - [25/Mar/2025 16:26:41] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:26:42,952 - INFO - Usuario vayron accedió a la página de calificaciones.
+2025-03-25 16:26:42,965 - INFO - 127.0.0.1 - - [25/Mar/2025 16:26:42] "GET /calif HTTP/1.1" 200 -
+2025-03-25 16:26:43,324 - INFO - 127.0.0.1 - - [25/Mar/2025 16:26:43] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:26:44,307 - INFO - 127.0.0.1 - - [25/Mar/2025 16:26:44] "GET /index HTTP/1.1" 200 -
+2025-03-25 16:26:44,668 - INFO - 127.0.0.1 - - [25/Mar/2025 16:26:44] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:26:45,455 - INFO - 127.0.0.1 - - [25/Mar/2025 16:26:45] "GET /buscar_A HTTP/1.1" 200 -
+2025-03-25 16:26:45,813 - INFO - 127.0.0.1 - - [25/Mar/2025 16:26:45] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:26:50,213 - INFO - Usuario vayron buscó al alumno Vayron Granados.
+2025-03-25 16:26:50,217 - INFO - 127.0.0.1 - - [25/Mar/2025 16:26:50] "[32mPOST /buscar_A HTTP/1.1[0m" 302 -
+2025-03-25 16:26:50,672 - INFO - 127.0.0.1 - - [25/Mar/2025 16:26:50] "[35m[1mGET /resolver/2 HTTP/1.1[0m" 500 -
+2025-03-25 16:26:50,798 - INFO - 127.0.0.1 - - [25/Mar/2025 16:26:50] "[36mGET /resolver/2?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-03-25 16:26:51,039 - INFO - 127.0.0.1 - - [25/Mar/2025 16:26:51] "[36mGET /resolver/2?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-03-25 16:26:51,071 - INFO - 127.0.0.1 - - [25/Mar/2025 16:26:51] "GET /resolver/2?__debugger__=yes&cmd=resource&f=console.png&s=rvQDQSf6xmNK1u9sfmsI HTTP/1.1" 200 -
+2025-03-25 16:27:48,819 - INFO - 127.0.0.1 - - [25/Mar/2025 16:27:48] "GET /resolver/2 HTTP/1.1" 200 -
+2025-03-25 16:27:49,016 - INFO - 127.0.0.1 - - [25/Mar/2025 16:27:49] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:27:58,723 - INFO - Usuario vayron resolvió el examen del alumno Vayron. Calificación: 0.0.
+2025-03-25 16:27:58,726 - INFO - 127.0.0.1 - - [25/Mar/2025 16:27:58] "[32mPOST /resolver/2 HTTP/1.1[0m" 302 -
+2025-03-25 16:27:58,876 - INFO - Usuario vayron accedió a la página de calificaciones.
+2025-03-25 16:27:58,881 - INFO - 127.0.0.1 - - [25/Mar/2025 16:27:58] "GET /calif HTTP/1.1" 200 -
+2025-03-25 16:27:59,043 - INFO - 127.0.0.1 - - [25/Mar/2025 16:27:59] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:28:02,576 - INFO - 127.0.0.1 - - [25/Mar/2025 16:28:02] "GET /index HTTP/1.1" 200 -
+2025-03-25 16:28:02,826 - INFO - 127.0.0.1 - - [25/Mar/2025 16:28:02] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:28:04,107 - INFO - 127.0.0.1 - - [25/Mar/2025 16:28:04] "GET /crearA HTTP/1.1" 200 -
+2025-03-25 16:28:04,475 - INFO - 127.0.0.1 - - [25/Mar/2025 16:28:04] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:28:17,092 - INFO - Usuario vayron agregó un alumno: Alonso Cardiel.
+2025-03-25 16:28:17,098 - INFO - 127.0.0.1 - - [25/Mar/2025 16:28:17] "[32mPOST /crearA HTTP/1.1[0m" 302 -
+2025-03-25 16:28:17,418 - INFO - 127.0.0.1 - - [25/Mar/2025 16:28:17] "GET /crearA HTTP/1.1" 200 -
+2025-03-25 16:28:17,678 - INFO - 127.0.0.1 - - [25/Mar/2025 16:28:17] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:28:19,207 - INFO - 127.0.0.1 - - [25/Mar/2025 16:28:19] "GET /index HTTP/1.1" 200 -
+2025-03-25 16:28:19,558 - INFO - 127.0.0.1 - - [25/Mar/2025 16:28:19] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:28:20,386 - INFO - 127.0.0.1 - - [25/Mar/2025 16:28:20] "GET /crearE HTTP/1.1" 200 -
+2025-03-25 16:28:20,760 - INFO - 127.0.0.1 - - [25/Mar/2025 16:28:20] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:28:54,205 - INFO - Usuario vayron creó una pregunta: ¿Dónde estas?.
+2025-03-25 16:28:54,212 - INFO - 127.0.0.1 - - [25/Mar/2025 16:28:54] "POST /crearE HTTP/1.1" 200 -
+2025-03-25 16:28:54,545 - INFO - 127.0.0.1 - - [25/Mar/2025 16:28:54] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:28:56,226 - INFO - 127.0.0.1 - - [25/Mar/2025 16:28:56] "GET /index HTTP/1.1" 200 -
+2025-03-25 16:28:56,572 - INFO - 127.0.0.1 - - [25/Mar/2025 16:28:56] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:28:57,313 - INFO - Usuario vayron accedió a la página de calificaciones.
+2025-03-25 16:28:57,313 - INFO - 127.0.0.1 - - [25/Mar/2025 16:28:57] "GET /calif HTTP/1.1" 200 -
+2025-03-25 16:28:57,676 - INFO - 127.0.0.1 - - [25/Mar/2025 16:28:57] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:29:00,260 - INFO - Usuario vayron cargó el grupo IDGS-809.
+2025-03-25 16:29:00,262 - INFO - 127.0.0.1 - - [25/Mar/2025 16:29:00] "GET /load_group?group=IDGS-809 HTTP/1.1" 200 -
+2025-03-25 16:29:05,551 - INFO - Usuario vayron cargó el grupo IDGS-805.
+2025-03-25 16:29:05,554 - INFO - 127.0.0.1 - - [25/Mar/2025 16:29:05] "GET /load_group?group=IDGS-805 HTTP/1.1" 200 -
+2025-03-25 16:29:07,605 - INFO - Usuario vayron cargó el grupo IDGS-806.
+2025-03-25 16:29:07,608 - INFO - 127.0.0.1 - - [25/Mar/2025 16:29:07] "GET /load_group?group=IDGS-806 HTTP/1.1" 200 -
+2025-03-25 16:29:10,141 - INFO - 127.0.0.1 - - [25/Mar/2025 16:29:10] "GET /index HTTP/1.1" 200 -
+2025-03-25 16:29:10,390 - INFO - 127.0.0.1 - - [25/Mar/2025 16:29:10] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:29:11,321 - INFO - Usuario vayron accedió a la página de calificaciones.
+2025-03-25 16:29:11,327 - INFO - 127.0.0.1 - - [25/Mar/2025 16:29:11] "GET /calif HTTP/1.1" 200 -
+2025-03-25 16:29:11,687 - INFO - 127.0.0.1 - - [25/Mar/2025 16:29:11] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:29:14,915 - INFO - Usuario vayron cerró sesión.
+2025-03-25 16:29:14,920 - INFO - 127.0.0.1 - - [25/Mar/2025 16:29:14] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-03-25 16:29:15,243 - INFO - 127.0.0.1 - - [25/Mar/2025 16:29:15] "GET /login HTTP/1.1" 200 -
+2025-03-25 16:29:15,494 - INFO - 127.0.0.1 - - [25/Mar/2025 16:29:15] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:46:11,041 - INFO -  * Detected change in 'c:\\Users\\vayro\\OneDrive\\Escritorio\\8VO\\8VO\\DESARROLLO WEB PRO\\examen\\blueprints\\maestros.py', reloading
+2025-03-25 16:46:11,277 - INFO -  * Restarting with stat
+2025-03-25 16:46:13,038 - INFO - Aplicación iniciada.
+2025-03-25 16:46:13,080 - WARNING -  * Debugger is active!
+2025-03-25 16:46:13,082 - INFO -  * Debugger PIN: 415-088-164
+2025-03-25 16:47:18,459 - INFO -  * Detected change in 'c:\\Users\\vayro\\OneDrive\\Escritorio\\8VO\\8VO\\DESARROLLO WEB PRO\\examen\\blueprints\\maestros.py', reloading
+2025-03-25 16:47:18,666 - INFO -  * Restarting with stat
+2025-03-25 16:47:20,249 - INFO - Aplicación iniciada.
+2025-03-25 16:47:20,279 - WARNING -  * Debugger is active!
+2025-03-25 16:47:20,287 - INFO -  * Debugger PIN: 415-088-164
+2025-03-25 16:49:25,858 - INFO -  * Detected change in 'c:\\Users\\vayro\\OneDrive\\Escritorio\\8VO\\8VO\\DESARROLLO WEB PRO\\examen\\blueprints\\maestros.py', reloading
+2025-03-25 16:49:26,023 - INFO -  * Restarting with stat
+2025-03-25 16:49:27,855 - INFO - Aplicación iniciada.
+2025-03-25 16:49:27,892 - WARNING -  * Debugger is active!
+2025-03-25 16:49:27,900 - INFO -  * Debugger PIN: 415-088-164
+2025-03-25 16:54:17,747 - INFO -  * Detected change in 'c:\\Users\\vayro\\OneDrive\\Escritorio\\8VO\\8VO\\DESARROLLO WEB PRO\\examen\\blueprints\\maestros.py', reloading
+2025-03-25 16:54:17,979 - INFO -  * Restarting with stat
+2025-03-25 16:54:19,733 - INFO - Aplicación iniciada.
+2025-03-25 16:54:19,767 - WARNING -  * Debugger is active!
+2025-03-25 16:54:19,776 - INFO -  * Debugger PIN: 415-088-164
+2025-03-25 16:56:02,159 - INFO - 127.0.0.1 - - [25/Mar/2025 16:56:02] "GET / HTTP/1.1" 200 -
+2025-03-25 16:56:02,495 - INFO - 127.0.0.1 - - [25/Mar/2025 16:56:02] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:56:08,727 - INFO - Usuario vayron inició sesión.
+2025-03-25 16:56:08,733 - INFO - 127.0.0.1 - - [25/Mar/2025 16:56:08] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-03-25 16:56:09,092 - INFO - 127.0.0.1 - - [25/Mar/2025 16:56:09] "GET /index HTTP/1.1" 200 -
+2025-03-25 16:56:09,299 - INFO - 127.0.0.1 - - [25/Mar/2025 16:56:09] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:56:11,361 - INFO - 127.0.0.1 - - [25/Mar/2025 16:56:11] "GET /maestros HTTP/1.1" 200 -
+2025-03-25 16:56:11,705 - INFO - 127.0.0.1 - - [25/Mar/2025 16:56:11] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
+2025-03-25 16:56:25,800 - INFO - 127.0.0.1 - - [25/Mar/2025 16:56:25] "GET /maestros/editar/1 HTTP/1.1" 200 -
+2025-03-25 16:56:26,154 - INFO - 127.0.0.1 - - [25/Mar/2025 16:56:26] "[33mGET /static/styles.css HTTP/1.1[0m" 404 -
+2025-03-25 16:56:28,904 - INFO - The CSRF token is missing.
+2025-03-25 16:56:28,904 - INFO - 127.0.0.1 - - [25/Mar/2025 16:56:28] "[31m[1mPOST /maestros/editar/1 HTTP/1.1[0m" 400 -
+2025-03-25 16:56:33,347 - INFO - 127.0.0.1 - - [25/Mar/2025 16:56:33] "GET /maestros HTTP/1.1" 200 -
+2025-03-25 16:56:33,588 - INFO - 127.0.0.1 - - [25/Mar/2025 16:56:33] "[36mGET /static/css/output.css HTTP/1.1[0m" 304 -
