@@ -9,6 +9,7 @@ maestros_bp = Blueprint('maestros', __name__, template_folder='../templates')
 @maestros_bp.route('/maestros', methods=['GET', 'POST'])
 @login_required
 def maestros():
+    create_forms = forms.MaestroForm(request.form)
     if request.method == 'POST':
         nombre = request.form['nombre']
         contrasenia = request.form['contrasenia']
@@ -19,24 +20,26 @@ def maestros():
         flash("Maestro agregado correctamente", "success")
         return redirect(url_for('maestros.maestros'))
     maestros = Maestro.query.all()
-    return render_template('index_M.html', maestros=maestros)
+    return render_template('index_M.html', maestros=maestros, form=create_forms)
 
 @maestros_bp.route('/maestros/eliminar/<int:id>', methods=['GET', 'POST'])
 @login_required
 def eliminar_maestro(id):
     maestro = Maestro.query.get_or_404(id)
+    create_forms = forms.MaestroForm(request.form)
     if request.method == 'POST':
         db.session.delete(maestro)
         db.session.commit()
         logging.info(f"Usuario {current_user.nombre} eliminó al maestro: {maestro.nombre}.")
         flash("Maestro eliminado correctamente", "success")
         return redirect(url_for('maestros.maestros'))
-    return render_template('borrar_M.html', maestro=maestro)
+    return render_template('index_M.html', maestro=maestro, form=create_forms)
 
 @maestros_bp.route('/maestros/editar/<int:id>', methods=['GET', 'POST'])
 @login_required
 def editar_maestro(id):
     maestro = Maestro.query.get_or_404(id)
+    create_forms = forms.MaestroForm(request.form)
     if request.method == 'POST':
         maestro.nombre = request.form['nombre']
         maestro.contrasenia = request.form['contrasenia']
@@ -44,7 +47,7 @@ def editar_maestro(id):
         logging.info(f"Usuario {current_user.nombre} editó al maestro: {maestro.nombre}.")
         flash("Maestro actualizado correctamente", "success")
         return redirect(url_for('maestros.maestros'))
-    return render_template('editar_M.html', maestro=maestro)
+    return render_template('editar_M.html', maestro=maestro, form=create_forms)
 
 @maestros_bp.route("/crearE", methods=["GET", "POST"])
 @login_required

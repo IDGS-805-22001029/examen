@@ -9,19 +9,16 @@ from blueprints.maestros import maestros_bp
 from blueprints.auth import auth_bp
 from datetime import datetime
 
-# Configuración de la aplicación
 app = Flask(__name__)
 app.config.from_object(DevelopmentConfig)
 csrf = CSRFProtect(app)
 
-# Configuración del sistema de logs
 logging.basicConfig(
     filename='app.log',
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
 
-# Configuración de Flask-Login
 login_manager = LoginManager()
 login_manager.init_app(app)
 login_manager.login_view = 'auth.login'
@@ -30,7 +27,6 @@ login_manager.login_view = 'auth.login'
 def load_user(maestro_id):
     return Maestro.query.get(int(maestro_id))
 
-# Registrar Blueprints
 app.register_blueprint(alumnos_bp)
 app.register_blueprint(maestros_bp)
 app.register_blueprint(auth_bp)

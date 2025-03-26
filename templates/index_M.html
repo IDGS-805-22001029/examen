@@ -1,55 +1,79 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "layout.html" %}
+{% block content %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maestros</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/output.css') }}">
-</head>
+<body class="bg-gray-100 dark:bg-gray-800">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-center text-gray-800 dark:text-gray-100 mb-6">Gestión de Maestros</h1>
 
-<body>
-    <h1>Gestión de Maestros</h1>
+        <div class="bg-white dark:bg-gray-700 shadow-md rounded-lg p-6 mb-8">
+            <h2 class="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-4">Agregar Maestro</h2>
+            <form method="POST" action="{{ url_for('maestros.maestros') }}" class="space-y-4">
+                {{ form.csrf_token }}
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+                <div>
+                    <label for="nombre" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required
+                        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 dark:bg-gray-600 dark:border-gray-500 dark:text-gray-100">
+                </div>
+                <div>
+                    <label for="contrasenia" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Contraseña:</label>
+                    <input type="password" id="contrasenia" name="contrasenia" required
+                        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 dark:bg-gray-600 dark:border-gray-500 dark:text-gray-100">
+                </div>
+                <button type="submit"
+                    class="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                    Agregar Maestro
+                </button>
+            </form>
+        </div>
 
-    <form method="POST" action="{{ url_for('maestros.maestros') }}">
-        {{ form.csrf_token }}
-        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-        <label for="contrasenia">Contraseña:</label>
-        <input type="password" id="contrasenia" name="contrasenia" required>
-        <button type="submit">Agregar Maestro</button>
-    </form>
-
-    <hr>
-
-    <h2>Lista de Maestros</h2>
-    <table border="1">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Nombre</th>
-                <th>Acciones</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for maestro in maestros %}
-            <tr>
-                <td>{{ maestro.id }}</td>
-                <td>{{ maestro.nombre }}</td>
-                <td>
-                    <a href="{{ url_for('maestros.editar_maestro', id=maestro.id) }}">Editar</a>
-
-                    <form method="POST" action="{{ url_for('maestros.eliminar_maestro', id=maestro.id) }}"
-                        style="display:inline;">
-                        <button type="submit"
-                            onclick="return confirm('¿Estás seguro de eliminar este maestro?');">Eliminar</button>
-                    </form>
-                </td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
+        <div class="bg-white dark:bg-gray-700 shadow-md rounded-lg p-6">
+            <h2 class="text-xl font-semibold text-gray-800 dark:text-gray-100 mb-4">Lista de Maestros</h2>
+            <table class="min-w-full divide-y divide-gray-200 dark:divide-gray-600">
+                <thead class="bg-gray-50 dark:bg-gray-600">
+                    <tr>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
+                            ID
+                        </th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
+                            Nombre
+                        </th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">
+                            Acciones
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white dark:bg-gray-700 divide-y divide-gray-200 dark:divide-gray-600">
+                    {% for maestro in maestros %}
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                            {{ maestro.id }}
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900 dark:text-gray-100">
+                            {{ maestro.nombre }}
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium">
+                            <a href="{{ url_for('maestros.editar_maestro', id=maestro.id) }}"
+                                class="text-indigo-600 hover:text-indigo-900 dark:text-indigo-400 dark:hover:text-indigo-500">
+                                Editar
+                            </a>
+                            <form method="POST" action="{{ url_for('maestros.eliminar_maestro', id=maestro.id) }}"
+                                style="display:inline;">
+                                {{ form.csrf_token }}
+                                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+                                <button type="submit"
+                                    class="text-red-600 hover:text-red-900 dark:text-red-400 dark:hover:text-red-500 ml-4"
+                                    onclick="return confirm('¿Estás seguro de eliminar este maestro?');">
+                                    Eliminar
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
 </body>
 
-</html>
+{% endblock %}

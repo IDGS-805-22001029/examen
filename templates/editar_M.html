@@ -1,27 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "layout.html" %}
+{% block content %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editar Maestro</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-</head>
+<body class="bg-gray-100 dark:bg-gray-800">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-center text-gray-800 dark:text-gray-100 mb-6">Editar Maestro</h1>
 
-<body>
-    <h1>Editar Maestro</h1>
-    <form method="POST" action="{{ url_for('maestros.editar_maestro', id=maestro.id) }}">
-        {{ form.csrf_token }}
-        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" value="{{ maestro.nombre }}" required>
-        <br>
-        <label for="contrasenia">Contraseña:</label>
-        <input type="password" id="contrasenia" name="contrasenia" value="{{ maestro.contrasenia }}" required>
-        <br>
-        <button type="submit">Guardar Cambios</button>
-    </form>
-    <a href="{{ url_for('maestros.maestros') }}">Cancelar</a>
+        <div class="bg-white dark:bg-gray-700 shadow-md rounded-lg p-6">
+            <form method="POST" action="{{ url_for('maestros.editar_maestro', id=maestro.id) }}" class="space-y-4">
+                {{ form.csrf_token }}
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+                <div>
+                    <label for="nombre" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" value="{{ maestro.nombre }}" required
+                        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 dark:bg-gray-600 dark:border-gray-500 dark:text-gray-100">
+                </div>
+                <div>
+                    <label for="contrasenia" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Contraseña:</label>
+                    <input type="password" id="contrasenia" name="contrasenia" value="{{ maestro.contrasenia }}" required
+                        class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 dark:bg-gray-600 dark:border-gray-500 dark:text-gray-100">
+                </div>
+                <div class="flex justify-end space-x-4">
+                    <a href="{{ url_for('maestros.maestros') }}"
+                        class="bg-gray-500 text-white py-2 px-4 rounded-md hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2">
+                        Cancelar
+                    </a>
+                    <button type="submit"
+                        class="bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                        Guardar Cambios
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 
-</html>
+{% endblock %}

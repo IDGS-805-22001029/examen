@@ -1,5 +1,5 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, IntegerField
+from wtforms import StringField, IntegerField, SubmitField
 from wtforms import validators
 from wtforms.validators import ValidationError
 import re
@@ -63,5 +63,16 @@ class LoginForm(FlaskForm):
         validators.DataRequired(message='El nombre de usuario es requerido')
     ])
     password = StringField('Password', [
+        validators.DataRequired(message='La contraseña es requerida')
+    ])
+
+class MaestroForm(FlaskForm):
+    id = IntegerField('id', [
+        validators.number_range(min=1, max=20, message='valor no valido')
+    ])
+    nombre = StringField('Nombre', [
+        validators.DataRequired(message='El nombre es requerido')
+    ])
+    contrasenia = StringField('Contraseña', [
         validators.DataRequired(message='La contraseña es requerida')
     ])
